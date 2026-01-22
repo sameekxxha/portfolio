@@ -1,10 +1,10 @@
-const CACHE_NAME = "sam-pwa-v1";
+const CACHE_NAME = "portfolio-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js"
+  "./",
+  "./index.html",
+  "./manifest.json"
 ];
+
 
 // Install
 self.addEventListener("install", event => {
@@ -23,3 +23,4 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
